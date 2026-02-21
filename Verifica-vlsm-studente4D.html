@@ -1467,11 +1467,11 @@ Default Gateway: <span class="comment">(lasciare vuoto)</span>
             </div>
             <div class="packet-field">
                 <span class="field-name">Source IP</span>
-                <span class="field-value" style="color: var(--accent-pink);">192.168.0.______  (IP di PC-Alfa2 — ora è la sorgente!)</span>
+                <span class="field-value" style="color: var(--accent-pink);">192.168.0.65  (IP di PC-Alfa2 — ora è la sorgente!)</span>
             </div>
             <div class="packet-field">
                 <span class="field-name">Destination IP</span>
-                <span class="field-value" style="color: var(--accent-pink);">192.168.0.______  (IP di PC-Alfa1 — ora è la destinazione!)</span>
+                <span class="field-value" style="color: var(--accent-pink);">192.168.0.66  (IP di PC-Alfa1 — ora è la destinazione!)</span>
             </div>
         </div>
         <div class="packet-layer">
@@ -1523,16 +1523,16 @@ Default Gateway: <span class="comment">(lasciare vuoto)</span>
                     PC-Alfa1 > Command Prompt
                 </div>
                 <div class="code-body">
-<span class="cmd">C:\&gt;</span> ping <span class="placeholder">192.168.0.______</span>  <span class="comment">&lt;-- IP di PC-Beta1</span>
+<span class="cmd">C:\&gt;</span> ping <span class="placeholder">192.168.0.1</span>  <span class="comment">&lt;-- IP di PC-Beta1</span>
 
-<span class="output">Pinging 192.168.0.______ with 32 bytes of data:</span>
+<span class="output">Pinging 192.168.0.1 with 32 bytes of data:</span>
 
 <span class="highlight">Request timed out.</span>
 <span class="highlight">Request timed out.</span>
 <span class="highlight">Request timed out.</span>
 <span class="highlight">Request timed out.</span>
 
-<span class="output">Ping statistics for 192.168.0.______:</span>
+<span class="output">Ping statistics for 192.168.0.1:</span>
 <span class="output">    Packets: Sent = 4, Received = 0, Lost = 4 (100% loss)</span>
                 </div>
             </div>
@@ -1551,9 +1551,7 @@ Default Gateway: <span class="comment">(lasciare vuoto)</span>
     </div>
 
     <div class="img-placeholder">
-        <div class="icon">❌</div>
-        <div class="label">[IMG_19] — Output del comando ping da PC-Alfa1 verso PC-Beta1 (fallimento - Request timed out)</div>
-        <div class="hint">Cattura il Command Prompt di PC-Alfa1 con il ping fallito verso un IP della Rete Beta</div>
+        <img src="failPingAlfa1toBeta1.png" alt="Output del comando ping da PC-Alfa1 verso PC-Beta1 (fallimento - Request timed out)">
     </div>
 
     <h3>Analisi nella Simulation Mode del ping fallito</h3>
